@@ -65,7 +65,7 @@
 								<div class="container">
 									<center>
 									<h3>Overview</h3>
-									<img src="images/pic03.jpg"></img>
+									<a href="files/AMS SCHEMATIC.pdf" target="_blank" class="image"><img src="images/AMS_schematic_Thumb.png"></a>
 									<p>The new battery needs a new accumulator system. This means that a new AMS was needed. The goal of this project was to create an AMS that is robust and also future proof so we can expand the capactiy of the battery pack without having to create a new board. The board is controlled by a TI Hercules microcontroller which handles all requirements of the project.</p>
 									</center>
 								</div>
@@ -88,7 +88,7 @@
 								<div class="container">
 									<center>
 									<h3>Design</h3>
-									<img src="images/pic01.jpg"></img>
+									<a href="images/AMS_design.png" class="image"><img src="images/AMS_design_Thumb.png"></a>
 									<p>The board was designed in EAGLE. According to FSAE rules, external USB connection on the AMS as well as HV sections of the board must be isolated 100 mils from each other. This area is marked out in gray. Because of isolation between the HV system and the LV system, an ADC with serial communication was required to communicate over an opto isolator. The ADC chosen communicates over SPI so we can talk to both ADCs on the same bus. Buffers are used to give 12V TTL signals to the rest of the car and buffer 12V TTL input signals to 3v3 for the Hercules. 8 LEDs are used to show a quick status of the board, showing faults and contactor states. Contactors are controled through low-side gate drivers controlled by HET pins on the Hercules.</p>
 									</center>
 								</div>
@@ -98,7 +98,7 @@
 								<div class="container">
 									<center>
 									<h3>Results</h3>
-									<img src="images/pic02.jpg"></img>
+									<img src="images/AMS_Thumb.jpg"></img>
 									<p>I am currently working on this project. I have designed, routed, and fabricated this board. The board is now going through software testing and we are testing SPI first. </p>
 									</center>
 								</div>

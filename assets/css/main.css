@@ -2862,7 +2862,7 @@ input, select, textarea {
 
 				#footer .copyright li:first-child {
 					border-left: 0;
-					margin-left: 0;
+					margin-left: 1em;
 					padding-left: 0;
 				}
 

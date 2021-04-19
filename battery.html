@@ -1,0 +1,127 @@
+<!DOCTYPE HTML>
+<!--
+	Read Only by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>AMS</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<!--<script src="https://kit.fontawesome.com/2427b49d6b.js" crossorigin="anonymous"></script> -->
+	</head>
+	<body class="is-preload">
+
+		<!-- Header -->
+			<section id="header">
+				<header>
+					<span class="image avatar"><img src="images/avatarme.jpg" alt="" /></span>
+					<h1 id="logo"><a href="index.html#one">Hunter Mace</a></h1>
+					</p>
+				</header>
+				<nav id="nav">
+					<ul>
+						<li><a href="projects.html#one">Back</a></li>
+						<li><a href="#one" class="active">Overview</a></li>
+						<li><a href="#two">Cell Selection</a></li>
+						<li><a href="#three">Design</a></li>
+						<li><a href="#four">HV Components</a></li>
+					</ul>
+				</nav>
+				<footer>
+					<ul class="icons">
+						<li><a href="https://www.linkedin.com/in/hunter-mace/" class="icon brands fa-linkedin"><span class="label">Linkedin</span></a></li>
+						<li><a href="https://www.facebook.com/hunter.mace.5" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+						<li><a href="https://www.instagram.com/hoonta_the_trumpet/" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+						<li><a href="https://github.com/Hoonta" class="icon brands fa-github"><span class="label">Github</span></a></li>
+						<li><a href=""&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#104;&#100;&#109;&#57;&#121;&#116;&#64;&#109;&#115;&#116;&#46;&#101;&#100;&#117;" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+					</ul>
+				</footer>
+			</section>
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Heading -->
+							<section id="">
+								<div class="container">
+									<center>
+									<header class="major">
+										<h2>HV Battery</h2>
+										<p>336V 60kW Li-Ion Battery Pack for EV Applications<br />
+										</p>
+									</header>
+									</center>
+								</div>
+							</section>
+
+						<!-- One -->
+							<section id="one">
+								<div class="container">
+									<center>
+									<h3>Overview</h3>
+									<img src="images/Battery.png"></img>
+									<p>For the 2020-2021 season, the team decided to create a new battery pack for increased power density, increased safety, and increased power output. This is a multi-displinary project between the Electrical and Mechanical Engineers on the team. I was responsible for designing the HV system inside of the battery, sourcing the cells, sourcing HV components, and communicating with the Mechanical designers in charge of the battery box.  </p>
+									</center>
+								</div>
+							</section>
+
+						<!-- Two -->
+							<section id="two">
+								<div class="container">
+									<center>
+									<h3>Cell Selection</h3>
+									<img src="images/VTC6T Cell.jpeg"></img>
+									<p>The requirements for this project were simple: increased power density, with increased safety. For this reason, we decided to use a cell designed by Energus Power Solutions. These cells are extremely safe compared to prismatic pouch type configurations, as the only conductive parts of the cell are the 2 copper tabs on the top. The cells also come together into a 16 cell module very easily. For power density the cells contain 6 VTC6 18650 cells designed by Sony. Each cell can output 180A continuous, and 270A for 10 seconds. This gives us over 60kW of power in a 18.5" x 12.5" small area.</p>
+									</center>
+								</div>
+							</section>
+
+						<!-- Three -->
+							<section id="three">
+								<div class="container">
+									<center>
+									<h3>Design</h3>
+									<img src="images/battery_module.jpg"></img>
+									<p>Due to the BMS's constraint of sensing 16 cells per BMS, a module can only include 16 cells. Relaying this with the Mechanical Engineers, we decided to do a 4x4 configuration as shown above in an assembled module. For structural stability, the modules are bolted into a plate that recesses the busbars and isolates them from the other busbars. In order to comply with our frame, we decided on 5 modules which gets us our voltage of 336V.</p>
+									</center>
+								</div>
+							</section>
+						<!-- Four -->
+							<section id="four">
+								<div class="container">
+									<center>
+									<h3>HV Components</h3>
+									<img src="images/HV_Components.png"></img>
+									<p>Knowing our max voltage of 336V and max current of 180A (270A for 10 sec) we decided on a 200A fast-acting main pack fuse. This is so that we can continuously pull 180A with no issue, but if we have a short circuit condition, the main pack fuse will blow before the parallel fusing off the cells, saving the battery pack. The other components inside of the battery include 3 contactors (HV relays), a precharge resistor, and a Current Sensor. The 2 large contactors selected support up to 350A current, with an interrupt of 800A. This may seem like overkill, but the contactors support contactor state detection by means of a secondary coil that behaves like the main coil, letting you sense the state of the current carrying coil. The precharge contactor is smaller however, and rated for 50A. This is because the precharge circuit introduces a resistor of 1.5 kOhms on the positive rail, acting as a current limiting resistor, this is to prevent large inrush current due to connecting a capactive load.</p>
+									</center>
+								</div>
+							</section>
+
+				<!-- Footer -->
+					<section id="footer">
+						<div class="">
+							<ul class="copyright">
+								<li>&copy; 2021 Hunter Mace. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+							</ul>
+						</div>
+					</section>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
